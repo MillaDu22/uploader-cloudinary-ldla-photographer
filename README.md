@@ -2,6 +2,8 @@
 
 Uploader-cloudinary-ldla-photographer.
 
+![Description de l'image](/src/images/startServerPm2.png)
+
 ## Description:
 
 Application d'upload images pour site de photographie. L'uploader coté frontend et le server coté backend sont des composants npm publics.
@@ -31,10 +33,52 @@ Ludmilla Marti, Aout 2024.
 - Multer
 - Config Cloudinary '.env example': 
 
-CLOUDINARY_CLOUD_NAME = ***********
-CLOUDINARY_API_KEY = ************
-CLOUDINARY_API_SECRET = ************
-CLOUDINARY_URL= ************************
+CLOUDINARY_CLOUD_NAME=your-cloudinary-cloud-name
+
+CLOUDINARY_API_KEY=your-cloudinary-api-key
+
+CLOUDINARY_API_SECRET=your-cloudinary-api-secret
+
+CLOUDINARY_URL=your-cloudinary-api-url
+
+PORT=3001
+
+
+
+- Pm2
+( npm install -g pm2 
+
+pm2 start index.js --name "my-server"
+
+pm2 list
+
+pm2 logs
+
+pm2 stop my-server
+
+pm2 restart my-server
+
+pm2 delete my-server
+
+pm2 startup
+
+pm2 save
+
+perso: pm2 start backend/index.js --name ldla-server-uploader-cloudinary
+
+sudo env PATH=$PATH:/Users/dok/.nvm/versions/node/v21.6.1/bin /Users/dok/.nvm/versions/node/v21.6.1/lib/node_modules/pm2/bin/pm2 startup launchd -u dok --hp /Users/dok )
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Backend command:
 - `node backend/index.js`
