@@ -3,9 +3,11 @@ require('dotenv').config();
 
 const { start } = require('ldla-server-uploader-cloudinary');
 
+
+
 // Démarre le serveur fourni par le composant //
 start({
-  port: 3001, // Spécifie le port sur lequel vous voulez démarrer le serveur //
+    port: process.env.PORT || 3001, 
     cloudinary: {
         cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
         api_key: process.env.CLOUDINARY_API_KEY,
@@ -15,6 +17,8 @@ start({
     },
     corsOptions: {
         origin: '*', // On peut configurer les options CORS ici si nécessaire //
+        methods: ['GET', 'POST', 'DELETE'], // Méthodes autorisées //
+        allowedHeaders: ['Content-Type', 'Authorization'] // En-têtes autorisés //
     }
 });
 

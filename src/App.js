@@ -6,11 +6,10 @@ function App() {
     return (
     <div className="App">
         <h1>Uploader Cloudinary</h1>
-        <Uploader />
+        <Uploader/>
     </div>
     );
 }
-
 export default App;
 
 
