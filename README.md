@@ -43,6 +43,8 @@ CLOUDINARY_URL=your-cloudinary-api-url
 
 PORT=3001
 
+command: node index.js
+
 
 
 - Pm2

@@ -1,3 +1,6 @@
+require('dotenv').config();
+
+
 const { start } = require('ldla-server-uploader-cloudinary');
 
 // Démarre le serveur fourni par le composant //
@@ -6,7 +9,9 @@ start({
     cloudinary: {
         cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
         api_key: process.env.CLOUDINARY_API_KEY,
-        api_secret: process.env.CLOUDINARY_API_SECRET
+        api_secret: process.env.CLOUDINARY_API_SECRET,
+        url: process.env.CLOUDINARY_URL,
+        secure: true
     },
     corsOptions: {
         origin: '*', // On peut configurer les options CORS ici si nécessaire //
