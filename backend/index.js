@@ -1,19 +1,12 @@
-const express = require('express');
 require('dotenv').config();
-const cors = require('cors');
-const { start } = require('ldla-server-uploader-cloudinary');
 
-const app = express();
-app.use(cors({
-    origin: 'http://localhost:3000', 
-    methods: ['GET', 'POST', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-}));
+
+const { start } = require('ldla-server-uploader-cloudinary');
 
 
 // Démarre le serveur fourni par le composant //
 start({
-    port: process.env.PORT || 3001, 
+    port: process.env.PORT || 3002, 
     cloudinary: {
         cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
         api_key: process.env.CLOUDINARY_API_KEY,
@@ -22,7 +15,7 @@ start({
         secure: true
     },
     corsOptions: {
-        origin: 'http://localhost:3000',
+        origin: '*',
     }
 });
 
