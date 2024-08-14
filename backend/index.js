@@ -5,8 +5,8 @@ const { start } = require('ldla-server-uploader-cloudinary');
 
 const app = express();
 app.use(cors({
-    origin: 'http://localhost:3001', // Remplacez par l'origine de votre front-end si nécessaire
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    origin: 'http://localhost:3000', 
+    methods: ['GET', 'POST', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
@@ -22,9 +22,7 @@ start({
         secure: true
     },
     corsOptions: {
-        origin: '*', // On peut configurer les options CORS ici si nécessaire //
-        methods: ['GET', 'POST', 'DELETE'], // Méthodes autorisées //
-        allowedHeaders: ['Content-Type', 'Authorization'] // En-têtes autorisés //
+        origin: 'http://localhost:3000',
     }
 });
 
