@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/uploader-cloudinary-ldla-photographer/static/css/main.e6816592.css",
+    "main.js": "/uploader-cloudinary-ldla-photographer/static/js/main.b2ef39fa.js",
+    "static/js/453.7f3e9414.chunk.js": "/uploader-cloudinary-ldla-photographer/static/js/453.7f3e9414.chunk.js",
+    "index.html": "/uploader-cloudinary-ldla-photographer/index.html",
+    "main.e6816592.css.map": "/uploader-cloudinary-ldla-photographer/static/css/main.e6816592.css.map",
+    "main.b2ef39fa.js.map": "/uploader-cloudinary-ldla-photographer/static/js/main.b2ef39fa.js.map",
+    "453.7f3e9414.chunk.js.map": "/uploader-cloudinary-ldla-photographer/static/js/453.7f3e9414.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6816592.css",
+    "static/js/main.b2ef39fa.js"
+  ]
+}
