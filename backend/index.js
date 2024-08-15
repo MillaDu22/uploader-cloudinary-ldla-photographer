@@ -6,7 +6,7 @@ const { start } = require('ldla-server-uploader-cloudinary');
 
 // Démarre le serveur fourni par le composant //
 start({
-    port: process.env.PORT || 3002, 
+    port: process.env.PORT || 3001, 
     cloudinary: {
         cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
         api_key: process.env.CLOUDINARY_API_KEY,
