@@ -1,10 +1,10 @@
 {
-    "rewrites": [
-        { "source": "/api/(.*)", "destination": "https://backend-uploader-cloudinary-ldla-photographer.vercel.app/api/$1" },
-        { "source": "/(.*)", "destination": "/index.html" }
+    "routes": [
+        { "src": "/(.*)", "destination": "/index.html" }
     ],
     "builds": [
-        { "src": "package.json", "use": "@vercel/static-build" }
+        { "src": "index.js", "use": "@vercel/node"  }
     ]
 }
+
 
