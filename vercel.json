@@ -1,6 +1,6 @@
 {
-    "routes": [
-        { "src": "/(.*)", "destination": "/index.html" }
+    "rewrites": [
+        { "source": "/api/(.*)", "destination": "https://backend-uploader-cloudinary-ldla-photographer.vercel.app/api/$1" }
     ],
     "builds": [
         { "src": "package.json", "use": "@vercel/static-build" }
