@@ -2,7 +2,7 @@
   "name": "uploader-cloudinary-ldla-photographer",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://milladu22.github.io/uploader-cloudinary-ldla-photographer/",
+  "homepage": "https://uploader-cloudinary-ldla-photographer.vercel.app/",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
